@@ -1,0 +1,384 @@
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(242, 213, 194);
+    /* padding: 20px 20px; */
+    box-shadow: 0 5px 15px rgb(249, 247, 247);
+    /* z-index: 999; */
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li {
+    padding: 0 20px;
+    list-style: none;
+}
+
+#navbar li a {
+    font-size: 18px;
+    font-weight: 600;
+    color: brown;
+    text-decoration: none;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: white;
+    text-decoration: underline;
+    font-size: 19px;
+    transition: 0.3s ease-in;
+}
+
+.mobile {
+    display: none;
+}
+
+#close {
+    display: none;
+}
+
+#hero {
+    background-image: url("./images/coffee-bg1.jpg");
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 50% right 0;
+    /* padding-top: 20px; */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    /* padding-left: 40px; */
+    /* background-attachment: fixed; */
+}
+
+#hero h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    position: center;
+    margin-left: 30px;
+}
+
+#hero h4 {
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-left: 20px;
+}
+
+#hero p {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-left: 20px;
+}
+
+#hero button {
+    width: 120px;
+    height: 40px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    background: goldenrod;
+    border: 1px solid black;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    color: white;
+    margin-left: 120px;
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+footer .col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.section-p1 .col img {
+    width: 80px;
+    height: 80px;
+}
+
+footer h4 {
+    font-size: 20px;
+}
+
+footer p {
+    font-size: 16px;
+}
+
+footer a {
+    font-size: 16px;
+    text-decoration: none;
+    color: #222;
+    padding: 10px 0;
+}
+
+footer a:hover {
+    color: black;
+    text-decoration: underline;
+    font-weight: 700;
+    transition: 0.3s ease;
+}
+
+.col-install img {
+    width: 300px;
+    height: 150px;
+}
+
+.col-install .row img {
+    width: 200px;
+    height: 50px;
+}
+
+footer .follow {
+    margin-top: 20px;
+}
+
+footer .follow i {
+    color: rgb(84, 85, 86);
+    padding-right: 4px;
+    cursor: pointer;
+}
+
+.copyright {
+    text-align: center;
+}
+
+#form-details {
+    background: antiquewhite;
+}
+
+#form-details form {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+#form-details form input {
+    width: 100%;
+    padding: 12px 15px;
+    outline: none;
+    margin-bottom: 20px;
+    border: 1px solid black;
+}
+
+#form-details span {
+    font-size: 1.2rem;
+    margin-top: 40px;
+}
+
+#form-details h2 {
+    font-size: 2rem;
+}
+
+#form-details button {
+    width: 75px;
+    height: 25px;
+    margin: 20px 0px;
+    background: #bdbbbb;
+    color: rgb(11, 10, 10);
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+#form-details button:hover {
+    width: 78px;
+    height: 26.5px;
+    margin: 20px 0px;
+    background: #666464;
+    color: rgb(251, 248, 248);
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:799px) {
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        background-color: rgb(241, 224, 208);
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+        padding: 80px 0 0 10px;
+        transition: .3s;
+    }
+
+    #navbar.active {
+        right: 0px;
+    }
+
+    #navbar li {
+        margin-bottom: 25px;
+    }
+
+    #hero {
+        background-image: url("coffee-bg1.jpg");
+        height: 70vh;
+        width: 100%;
+        /* background-size: cover;
+        background-position: top 50% right 0; */
+        /* padding-top: 20px; */
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        /* padding-left: 40px; */
+        /* background-attachment: fixed; */
+    }
+
+    #hero {
+        justify-content: flex-start;
+    }
+
+    #hero button {
+        position: absolute;
+        bottom: 100px;
+        left: -20px;
+    }
+
+    .mobile {
+        display: flex;
+        margin-right: 40px;
+    }
+
+    .mobile i {
+        font-size: 26px;
+    }
+
+    #close {
+        display: initial;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: #222;
+        font-size: 24px;
+    }
+}
+
+
+
+@media (max-width: 477px) {
+
+    #hero h4,
+    p,
+    button {
+        display: none;
+    }
+
+    .col h4 {
+        font-size: 14px;
+    }
+
+    .col p {
+        font-size: 13px;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    footer {
+        display: flex;
+        /* flex-wrap: wrap; */
+        flex-direction: column;
+        /* justify-content: space-between; */
+        /* padding: 0 10px; */
+        margin-left: 40px;
+    }
+
+    footer .col h4,
+    p {
+        font-size: 14px;
+    }
+
+    footer .col a {
+        font-size: 13px;
+    }
+
+    .follow .icon i {
+        font-size: 10px;
+        padding-right: 1px;
+        margin-top: 4px;
+    }
+
+    .col-install h4 {
+        font-size: 14px;
+    }
+
+    .col-install .row img {
+        width: 40px;
+        height: 20px;
+    }
+
+    .col-install img {
+        width: 60px;
+        height: 30px;
+    }
+}
